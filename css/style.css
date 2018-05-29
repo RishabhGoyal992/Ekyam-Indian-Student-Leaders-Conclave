@@ -24,7 +24,7 @@ a:visited {
 }
 
 #reg {
-      background:#333030;
+      background:#000;
 color: #39c12c;
  
  padding: 0px 1px 0px 1px;
@@ -158,7 +158,7 @@ color: #39c12c;
 	top:0px;
 	width:100%; 
 	height:auto; 
-	background-color:#333030;
+	background-color:#000;
 	z-index:100;
 }
 #logo {
@@ -180,6 +180,7 @@ margin: 26px 0 20px 0;
 .navigation li{
 	display: inline-block;
       padding: 5px 10px;
+      font-size: 15px;  
       cursor: pointer;
       line-height: 70px;
       position: relative;
@@ -302,11 +303,12 @@ margin: 26px 0 20px 0;
 
 
 .ipl{
+
   background-attachment: fixed;
   width:100%;
   height:auto;
   position: relative;
-  padding:140px 0 0px 0px;
+  padding:0px 0 0px 0px;
 }
 
 
@@ -355,12 +357,12 @@ margin: 26px 0 20px 0;
 /* Slide 2 */ 
 
 #slide2{
-	background-image:url('../images/footprints.png');
-	background-color:#f68f67;
-	color:#ffffff;
+	background-image:url("about.png");
+	
 }
 #slide2 h1 {
 	font-size: 3.8em;
+  font-size: 90px;
 	letter-spacing: -3px;
 	line-height: 0px;
 	color:#ffffff;
@@ -380,7 +382,7 @@ margin: 26px 0 20px 0;
 /* Slide 3 */ 
 
 #slide3{
-	background-color:#f8b334;
+	background-color:#262626;
 }
 #slide3 h1 {
 	font-size: 3.8em;
@@ -669,25 +671,25 @@ margin-top: 0px;
 {
   0% {-webkit-transform: translate(000px,1500px);}
   
-  100% {-webkit-transform: translate(000px,180px);}
+  100% {-webkit-transform: translate(000px,80px);}
 }
 @-moz-keyframes first 
 {
   0% {-moz-transform: translate(000px,1500px);}
   
-  100% {-moz-transform: translate(000px,180px);}
+  100% {-moz-transform: translate(000px,80px);}
 }
 @-ms-keyframes first 
 {
   0% {-ms-transform: translate(000px,1500px);}
   
-  100% {-ms-transform: translate(000px,180pxx);}
+  100% {-ms-transform: translate(000px,80px);}
 }
 @keyframes first 
 {
   0% {transform: translate(000px,1500px);}
  
-  100% {transform: translate(000px,180px);}
+  100% {transform: translate(000px,80px);}
 }
 
 
@@ -875,12 +877,12 @@ margin-top: 0px;
 
 .team-box-img img {
     margin: 0 auto;
-    border: 20px solid #333;   
+       
 }
 
 footer {
     color: #fff;
-    background: #333
+    background-color: #000;
 }
 
 footer h3 {
@@ -1040,7 +1042,7 @@ color: white;
 
 footer {
     color: #fff;
-    background: #262626;
+    background: #000;
 }
 
 footer h3 {
@@ -1098,4 +1100,101 @@ footer {
 .ipl{
 
   padding-bottom: 0px;
+}
+
+
+
+.creden p{
+font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color: #8a8683;
+    font-weight: 700;
+
+}
+
+
+#timer {
+  
+  line-height: 1;
+  padding: 2px;
+  font-size: 50px;
+   font-family: 'Titillium Web', cursive;
+}
+
+span {
+ 
+  font-size: 50px;
+  color: white;
+}
+
+#days {
+  font-size: 50px;
+  color: #db4844;
+}
+#hours {
+  font-size: 50px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 50px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+
+
+.slider {
+  max-width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  z-index: 1000;
+  
+}
+.slider1,.slider2,.slider3 {
+  
+  width: 100%;
+  height: 100%;
+}
+.slider1 {
+  background: url('b1.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+} 
+.slider2 {
+  background: url('b2.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slider3 {
+    background: url('b3.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
 }
